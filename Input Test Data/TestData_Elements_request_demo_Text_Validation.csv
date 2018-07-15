@@ -1,0 +1,6 @@
+TestCase12;xpath;"//p[@class = 'ingress large-text']";"innerHTML";Join the thousands of shippers/BCOs and analysts who use Xeneta to gain full insight into container freight prices in real time and on demand.
+TestCase14;id;hs_cos_wrapper_widget_1511361239949_title;Request Your Demo Now
+Testcase13;xpath;"//h1[@class = 'page-heading heading']";"innerHTML";Xeneta Intelligence & Analytics Demo
+TestCase15;xpath;"//div[@id = 'hs_cos_wrapper_widget_1491554866884']/p/strong[1]";"innerHTML";Who should request this demo?
+TestCase16;xpath;"//div[@id = 'hs_cos_wrapper_widget_1491554866884']/ul[1]/li[1]/span[1]";"innerHTML";Shippers / BCOs (supply chain,  logistics, procurement, transportation, freight professionals)
+TestCase17;xpath;"//div[@id='hs_cos_wrapper_widget_1491554866884']/p[2]/span";"innerHTML";*We safeguard all information provided and make sure no sensitive information is disclosed.
