@@ -1,4 +1,4 @@
 TestCase2.2.1;id;product-screenshots;Product Screenshots
 TestCase2.2.2;id;hs_cos_wrapper_subheader;Click on a picture when enlarged to download the image.
 TestCase2.2.3;xpath;"//h2[@id='xeneta-logo']";"innerHTML";Xeneta Logo
-TestCase2.2.4;id;image-of-founders;Image of Founders
+TestCase2.2.4;id;image-of-founders;Image of Founder
