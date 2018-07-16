@@ -22,14 +22,14 @@ class MediaResources_language_Switcher(unittest.TestCase):
         driver.find_element_by_link_text('Deutsch').click()
         try:
             if driver.find_element_by_tag_name('h1').text == "Pressematerialien":
-               self.file1.writelines("SwitchToDeutsch" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+               self.file1.writelines("TestCase2.1.1" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
             else:
-               self.file1.writelines("SwitchToDeutsch" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+               self.file1.writelines("TestCase2.1.1" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
         except:
-            self.file1.writelines("SwitchToDeutsch" + " " + "Exception occurred" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.1.1" + " " + "Exception occurred" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
         time.sleep(5)
-        driver.get_screenshot_as_file( _init_.path1 + "SwitchToDeutsch" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
+        driver.get_screenshot_as_file( _init_.path1 + "TestCase2.1.1" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
 
     def test_Media_resources_language_switcher_English(self):
 
@@ -41,14 +41,14 @@ class MediaResources_language_Switcher(unittest.TestCase):
         driver.find_element_by_link_text('English').click()
         try:
             if driver.find_element_by_tag_name('h1').text == "Media Resources":
-               self.file1.writelines("SwitchToEnglish" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+               self.file1.writelines("TestCase2.1.2" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
             else:
-               self.file1.writelines("SwitchToEnglish" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+               self.file1.writelines("TestCase2.1.2" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
         except:
-            self.file1.writelines("SwitchToEnglish" + " " + "Exception occurred" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.1.2" + " " + "Exception occurred" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
         time.sleep(5)
-        driver.get_screenshot_as_file( _init_.path1 + "SwitchToEnglish" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
+        driver.get_screenshot_as_file( _init_.path1 + "TestCase2.1.2" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
 
 
     def tearDown(self):

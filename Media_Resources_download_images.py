@@ -23,15 +23,15 @@ class Media_Resources_Download_Images(unittest.TestCase):
         driver.execute_script( "window.scrollTo(0,700)" )
         try:
             driver.find_element_by_link_text('DOWNLOAD').click()
-            self.file1.writelines("DownloadLogo" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.4.1" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
         except:
-            self.file1.writelines("DownloadLogo" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.4.1" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
         time.sleep(2)
 
 
-        driver.get_screenshot_as_file(_init_.path1 + "DownloadLogo" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
+        driver.get_screenshot_as_file(_init_.path1 + "TestCase2.4.1" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
 
     def test_Media_resources_Download_FoundersImage(self):
 
@@ -45,15 +45,15 @@ class Media_Resources_Download_Images(unittest.TestCase):
         time.sleep(2)
         try:
             driver.find_element_by_link_text('Download full resolution').click()
-            self.file1.writelines("DownloadFoundersImage" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.4.2" + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
             time.sleep(5)
 
         except:
-            self.file1.writelines("DownloadFoundersImage" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+            self.file1.writelines("TestCase2.4.2" + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
         time.sleep( 2 )
 
-        driver.get_screenshot_as_file(_init_.path1 + "DownloadFoundersImage" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
+        driver.get_screenshot_as_file(_init_.path1 + "TestCase2.4.2" + "_" + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + ".png" )
 
 
     def tearDown(self):
