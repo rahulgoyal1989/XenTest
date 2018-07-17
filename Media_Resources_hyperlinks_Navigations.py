@@ -25,7 +25,7 @@ class MediaResources_hyperlinks_navigation(unittest.TestCase):
             if line[2] == "nav":
                 try:
                     driver.find_element_by_link_text(line[1]).click()
-                    self.file1.writelines(line[0] + " " + "Passed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
+                    self.file1.writelines(line[0] + " " + "Passe" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
 
                 except:
                     self.file1.writelines(line[0] + " " + "Failed" + " " + f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + '\n' )
