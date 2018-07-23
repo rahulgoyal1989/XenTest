@@ -13,7 +13,7 @@ class Xeneta_RequestDemo_webform_submit(unittest.TestCase):
         self.file = open( _init_.path + "TestData_Elements_request_demo_webform_submit.CSV", "r" )
         logging.info( f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + "-"+"TestData_Elements_request_demo_webform_submit.CSV" + " " + "file is opened")
         self.file1 = open( _init_.path2 + "Testcaseresults_request_demo.csv", "a+" )
-        logging.info(f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + "-"+"Testcaseresults_request_demo" + " " + "file is opened" )
+        logging.info("gg"+ f'{datetime.now():%Y-%m-%d %H-%M-%S%z}' + "-"+"Testcaseresults_request_demo" + " " + "file is opened" )
 
 
     def test_Request_Demo_webform_submit(self):
